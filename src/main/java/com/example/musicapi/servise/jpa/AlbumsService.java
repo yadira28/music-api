@@ -22,4 +22,14 @@ public class AlbumsService implements IAlbumsService {
 		return repoAlbums.findAll();
 	}
 
+	public void guardar(Album album) {
+		repoAlbums.save(album);
+		
+	}
+
+	public void eliminar(int idAlbum) {
+		repoAlbums.deleteById(idAlbum);
+		
+	}
+
 }
